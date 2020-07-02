@@ -3,11 +3,6 @@ import authHeader from "./auth.header";
 
 const URL = 'http://localhost:8080/api/test/';
 
-export const getAdminBoard = () => {
-    return axios.get(URL + 'admin', {
-        headers: authHeader()
-    })
-};
 export const getPublicContent = () => {
     return axios.get(URL + 'all');
 };
@@ -24,4 +19,9 @@ export const getModeratorBoard = () => {
     })
 };
 
+export const getAdminBoard = () => {
+    return axios.get(URL + 'admin', {
+        headers: authHeader()
+    })
+};
 

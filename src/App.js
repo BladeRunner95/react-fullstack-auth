@@ -105,7 +105,7 @@ const App = props => {
                         <Route exact path="/auth" component={Auth}/>
                         <Route exact path="/profile" component={Profile}/>
                         {/*<Route path="/user" component={BoardUser}/>*/}
-                        <PrivateRoute path="/moder" isAllowed={showModeratorBoard} component={BoardModerator}/>
+                        <PrivateRoute path="/moderator" isAllowed={showModeratorBoard} component={BoardModerator}/>
                         <PrivateRoute path="/admin" isAllowed={showAdminBoard} component={BoardAdmin}/>
                         <PrivateRoute path="/user" isAllowed={currentUser !== null} component={BoardUser}/>
                     </Switch>
